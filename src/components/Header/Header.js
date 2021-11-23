@@ -82,6 +82,9 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  logout_buttons: {
+    display: 'flex',
+  },
 }));
 
 export default function Header() {
@@ -171,31 +174,47 @@ export default function Header() {
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <Button variant="contained" className="header-button">
-              <NavLink
-                to="/add"
-                className="nav-link"
-                activeClassName="nav-active"
-              >
-                Add House
-              </NavLink>
-            </Button>
-
+            <NavLink
+              to="/add"
+              className="nav-link"
+              activeClassName="nav-active"
+            >
+              <IconButton>
+                <Button variant="contained" className="header-button">
+                  Add House
+                </Button>
+              </IconButton>
+            </NavLink>
             {user ? (
-              <>
-                <p>{user.email}</p>
-                <IconButton onClick={() => logOut()}>
-                  <Button variant="contained">Log Out</Button>
-                </IconButton>
-              </>
+              <div className={classes.logout_buttons}>
+                <NavLink to="/">
+                  <p>
+                    <p>{user.email}</p>
+                  </p>
+                </NavLink>
+                <NavLink to="/">
+                  <IconButton onClick={() => logOut()}>
+                    <Button
+                      variant="contained"
+                      className="header-button"
+                      color="secondary"
+                    >
+                      Log Out
+                    </Button>
+                  </IconButton>
+                </NavLink>
+              </div>
             ) : (
-              <Button
-                onClick={() => registerUser()}
-                variant="contained"
-                color="secondary"
-              >
-                Sign up
-              </Button>
+              <IconButton>
+                <Button
+                  onClick={() => registerUser()}
+                  className="header-button"
+                  variant="contained"
+                  color="secondary"
+                >
+                  Sign up
+                </Button>
+              </IconButton>
             )}
           </div>
           <div className={classes.sectionMobile}>
