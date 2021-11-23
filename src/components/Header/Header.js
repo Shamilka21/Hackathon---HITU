@@ -14,9 +14,10 @@ import SearchIcon from '@material-ui/icons/Search';
 // import MailIcon from "@material-ui/icons/Mail";
 // import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from '@material-ui/icons/MoreVert';
-import { authContext } from '../contexts/AuthContext';
+import { authContext } from '../../contexts/AuthContext';
 import { Button } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
+import './Header.css';
 // import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const useStyles = makeStyles((theme) => ({
@@ -141,7 +142,7 @@ export default function Header() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static" color="secondary">
+      <AppBar position="static" className="header">
         <Toolbar>
           <IconButton
             edge="start"
@@ -170,6 +171,16 @@ export default function Header() {
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
+            <Button variant="contained" className="header-button">
+              <NavLink
+                to="/add"
+                className="nav-link"
+                activeClassName="nav-active"
+              >
+                Add House
+              </NavLink>
+            </Button>
+
             {user ? (
               <>
                 <p>{user.email}</p>
@@ -186,13 +197,6 @@ export default function Header() {
                 Sign up
               </Button>
             )}
-            <NavLink
-              to="/add"
-              className="nav-link"
-              activeClassName="nav-active"
-            >
-              Add House
-            </NavLink>
           </div>
           <div className={classes.sectionMobile}>
             <IconButton

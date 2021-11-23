@@ -1,0 +1,17 @@
+.MuiAppBar-colorPrimary {
+  background-color: transparent !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.header-button {
+  margin-right: 25px !important;
+}
+
+.nav-link {
+  text-decoration: none !important;
+  color: black;
+}
