@@ -1,32 +1,40 @@
 {
   "houses": [
     {
-      "house": "4 room house",
+      "title": "3 room house",
       "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
       "type": "dry-wall",
-      "price": "18000$",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "id": 1
     },
     {
-      "house": "8 room house",
+      "title": "4 room house",
       "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
       "type": "dry-wall",
-      "price": "18000$",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "id": 2
     },
     {
-      "house": "2 room house",
+      "title": "3 room house",
       "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
       "type": "dry-wall",
-      "price": "18000$",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "id": 3
     },
     {
-      "house": "9 room house",
+      "title": "3 room house",
       "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
       "type": "dry-wall",
-      "price": "18000$",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "id": 4
+    },
+    {
+      "title": "",
+      "image": "vsdvds",
+      "type": "vsdvdsvds",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+      "price": "vssdds",
+      "id": 5
     }
   ]
 }
