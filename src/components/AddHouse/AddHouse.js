@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 
 const AddHouse = () => {
   const [form, setForm] = useState({
+    house: '',
     image: '',
     type: '',
     description: '',

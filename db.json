@@ -1,27 +1,31 @@
 {
   "houses": [
     {
-      "house": "3 room house",
-      "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
-      "type": "dry-wall",
-      "id": 1
-    },
-    {
       "house": "4 room house",
       "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
       "type": "dry-wall",
+      "price": "18000$",
+      "id": 1
+    },
+    {
+      "house": "8 room house",
+      "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
+      "type": "dry-wall",
+      "price": "18000$",
       "id": 2
     },
     {
-      "house": "3 room house",
+      "house": "2 room house",
       "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
       "type": "dry-wall",
+      "price": "18000$",
       "id": 3
     },
     {
-      "house": "3 room house",
+      "house": "9 room house",
       "image": "https://www.croatialuxuryrent.com/storage/upload/60a/bf3/6be/IMG_5654_tn.jpg",
       "type": "dry-wall",
+      "price": "18000$",
       "id": 4
     }
   ]

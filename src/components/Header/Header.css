@@ -8,10 +8,15 @@
 }
 
 .header-button {
-  margin-right: 25px !important;
+  margin-right: 10px !important;
 }
 
 .nav-link {
   text-decoration: none !important;
   color: black;
+}
+
+.Buy-House-button {
+  margin: 1px;
+  margin-right: 10px;
 }
