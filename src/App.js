@@ -1,14 +1,17 @@
-import { BrowserRouter } from 'react-router-dom';
-import AppRoutes from './routes';
-import AuthContext from './contexts/AuthContext';
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes";
+import AuthContext from "./contexts/AuthContext";
+import HouseContext from "./contexts/HouseContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <AuthContext>
-        <AppRoutes />
-      </AuthContext>
-    </BrowserRouter>
+    <HouseContext>
+      <BrowserRouter>
+        <AuthContext>
+          <AppRoutes />
+        </AuthContext>
+      </BrowserRouter>
+    </HouseContext>
   );
 }
 
