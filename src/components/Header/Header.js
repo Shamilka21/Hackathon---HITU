@@ -74,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.up('md')]: {
       display: 'flex',
+      alignItems: 'center',
     },
   },
   sectionMobile: {
@@ -174,6 +175,11 @@ export default function Header() {
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
+            <NavLink to="/BuyHouse" className="Buy-House-button">
+              <IconButton>
+                <Button variant="contained">Buy House</Button>
+              </IconButton>
+            </NavLink>
             <NavLink
               to="/add"
               className="nav-link"
