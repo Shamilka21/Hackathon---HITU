@@ -41,7 +41,7 @@ const AddHouse = () => {
             <h1 className="h1-add">Add House</h1>
           </div>
           <form className="add-form" onSubmit={handleSubmit}>
-            <input type="text" onChange={handleChange} placeholder="House-name" name="name" value={form.title} />
+            <input type="text" onChange={handleChange} placeholder="Title" name="title" value={form.title} />
             <input type="text" onChange={handleChange} placeholder="Image" name="image" value={form.image} />
             <input type="text" onChange={handleChange} placeholder="Type" name="type" value={form.type} />
             <input type="text" onChange={handleChange} placeholder="Description" name="description" value={form.description} />
