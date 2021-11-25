@@ -1,11 +1,14 @@
 import { Button, Paper } from '@material-ui/core';
 import React, { useContext, useState } from 'react';
-import houseContext, { useProducts } from '../../contexts/HouseContext';
+import houseContext, {
+  useHouse,
+  useProducts,
+} from '../../contexts/HouseContext';
 // import { useHistory } from 'react-router';
 import './AddHouse.css';
 
 const AddHouse = () => {
-  const { addHouse } = useProducts();
+  const { addHouse } = useHouse();
 
   const [form, setForm] = useState({
     title: '',
@@ -50,8 +53,8 @@ const AddHouse = () => {
             <input
               type="text"
               onChange={handleChange}
-              placeholder="House-name"
-              name="name"
+              placeholder="Title"
+              name="title"
               value={form.title}
             />
             <input
@@ -82,7 +85,9 @@ const AddHouse = () => {
               name="price"
               value={form.price}
             />
-            <Button className="btn-add">Добавить</Button>
+            <Button type="submit" className="btn-add">
+              Добавить
+            </Button>
           </form>
         </Paper>
       </div>
